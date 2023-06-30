@@ -1,0 +1,30 @@
+
+ <div class="grid-container">
+  <h1 class="mat-h1"> <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">heroes</li>
+    </ol>
+  </nav></h1>
+  <app-breadcrumb></app-breadcrumb>
+  <mat-grid-list cols="2" rowHeight="350px">
+    <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
+      <mat-card class="dashboard-card">
+        <mat-card-content class="dashboard-card-content">
+          <div class="image-container">
+             <img src={{card.image}} class="card-image">
+            <h2>{{card.title}}</h2> 
+            <h3>{{card.descriptionCard}}</h3>
+            <footer>
+              <a [routerLink]="['/heroes', card.id]" class="btn btn-primary">Ver más</a>
+            </footer>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div> 
+    
+  
+
+

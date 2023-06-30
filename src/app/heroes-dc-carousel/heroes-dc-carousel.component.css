@@ -1,0 +1,91 @@
+body {
+  overflow-x: hidden;
+}
+
+.carrousel {
+  width: 90%;
+  max-width: 120em;
+  padding: 0.5em;
+  overflow: hidden;
+  border: 5px solid gray;
+}
+
+.carrousel .grande {
+  width: 400%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2em;
+  transition: all 0.5s ease;
+  transform: translateX(0%);
+}
+
+.carrousel .slide {
+  flex: 0 0 25%;
+  padding: 2em;
+  text-align: center;
+}
+
+.carrousel .img {
+  width: auto;
+  height: auto;
+  max-height: 21.5vh;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 8px solid gray;
+}
+
+.carrousel .descripcion {
+  margin-top: 2em;
+}
+
+.carrousel h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.carrousel p {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+
+.carrousel .ver-mas {
+  background-color: lightblue;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.carrousel .puntos {
+  width: 100%;
+  margin: 1em 0 0;
+  padding: 0.5em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrousel .punto {
+  width: 2em;
+  height: 2.5em;
+  margin: .9em;
+  background-color: gray;
+  border-radius: 60%;
+  cursor: progress;
+}
+
+.carrousel .punto.activo {
+  background-color: rgb(103, 143, 157);
+}
+
+.breadcrumb{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}

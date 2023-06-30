@@ -1,0 +1,16 @@
+.text-gray {
+    justify-content: center;
+    border: 1px solid gray;
+    padding: 10px;
+  }
+  .breadcrumb{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .image {
+    width: 175px;
+    height: 200px;
+  }
+  

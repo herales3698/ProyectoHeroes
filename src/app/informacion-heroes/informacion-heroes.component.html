@@ -1,0 +1,21 @@
+
+
+<!-- condicional ngif para que apreca el heroe al momento de presionar ver mas en dasboard de heroes -->
+<div class="row g-0 text-center" *ngIf="hero">
+    <h1><nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="">Home</a></li>
+        <li class="breadcrumb-item"><a href="heroes">heroes</a></li>
+        <li class="breadcrumb-item"><a href="carousel">carosuel heroes</a></li>
+        <li class="breadcrumb-item active" aria-current="page">detalles heroes</li>
+      </ol>
+    </nav></h1>
+    <div class="col-sm-6 col-md-4">
+      <img src="{{hero.image}}" class="img-fluid rounded image" alt="Hero Image">
+    </div>
+    <div class="col-6 col-md-8">
+      <h1 class="text-gray">{{hero.name}}</h1>
+      <p class="text-gray">{{hero.description}}</p>
+    </div>
+  </div>
+  

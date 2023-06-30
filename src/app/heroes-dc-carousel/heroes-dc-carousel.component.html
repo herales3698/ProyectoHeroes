@@ -1,0 +1,59 @@
+
+<body>
+  <h1>
+    <h1 class="mat-h1"> <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">carousel heroes</li>
+      </ol>
+    </nav></h1>
+  </h1>
+  <div class="carrousel">
+    <div class="grande">
+      <div class="slide">
+        <img src="{{imagenFlash}}" alt="imagen 1" class="img">
+        <div class="descripcion">
+          <h2>Descripción:</h2>
+          <p>se centra en varios personajes que han llevado el manto de Flash a lo largo de los años, pero el más conocido es Barry Allen</p>
+          <a [routerLink]="['/heroes/2' ]" class="btn btn-primary">Ver mas</a>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="{{imagenSuperman}}" alt="imagen 2" class="img">
+        <div class="descripcion">
+          <h2>Descripción:</h2>
+          <p>es un superhéroe de origen extraterrestre que posee una serie de habilidades sobrehumanas</p>
+          <a [routerLink]="['/heroes/1' ]" class="btn btn-primary">Ver mas</a>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="{{imagenMujerMaravilla}}" alt="imagen 3" class="img">
+        <div class="descripcion">
+          <h2>Descripción:</h2>
+          <p>tiene sus raíces en la mitología griega y ha sido  ampliada a lo largo de los años en diferentes adaptaciones y medios</p>
+          <a [routerLink]="['/heroes/3' ]" class="btn btn-primary">Ver mas</a>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="{{imagenLinternaVerde}}" alt="imagen 4" class="img">
+        <div class="descripcion">
+          <h2>Descripción:</h2>
+          <p>Linterna Verde es el nombre compartido por varios personajes de DC Comics</p>
+          <a [routerLink]="['/heroes/4' ]" class="btn btn-primary">Ver mas</a>
+        </div>
+      </div>
+    </div>
+
+    <ul class="puntos">
+      <li class="punto"></li>
+      <li class="punto"></li>
+      <li class="punto"></li>
+      <li class="punto"></li>
+    </ul>
+  </div>
+</body>
+
+
+
+
+
